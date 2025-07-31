@@ -184,7 +184,7 @@ def get_sql_agent(callback_handler: SQLCaptureCallback):
         llm=llm,
         db=db,
         agent_type="tool-calling",
-        verbose=True, # Set to False in production for less verbose logs
+        verbose=True, 
         callbacks=[callback_handler]
     )
     return agent
@@ -361,7 +361,7 @@ def try_manual_query_generation(user_prompt: str) -> Optional[str]:
             llm=llm,
             db=db,
             agent_type="tool-calling",
-            verbose=False # Keep this False for manual agent
+            verbose=False 
         )
         
         specific_prompt = f"""

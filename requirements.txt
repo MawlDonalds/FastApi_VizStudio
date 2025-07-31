@@ -1,8 +1,11 @@
 fastapi[all]
 uvicorn
-pandas
-plotly
+python-dotenv
 sqlalchemy
 psycopg2-binary
 langchain-google-genai
+langchain
 langchain-community
+pandas
+plotly
+numpy
